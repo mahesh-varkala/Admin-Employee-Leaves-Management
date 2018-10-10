@@ -1,4 +1,6 @@
-export const onPressLogin = (username, password, isLoggedIn) => ({
-	type: 'VALIDATION_SUCCESSFUL',
-	isLoggedIn: false
-})
+import _ from 'lodash';
+import * as AppActions from './actions';
+
+const ActionCreators = _.assign({}, AppActions);
+
+export default ActionCreators;
